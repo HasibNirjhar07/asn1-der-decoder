@@ -54,7 +54,7 @@ Install Rust from:
 ### Build from source
 
 ```bash
-git clone https://github.com/your-username/asn1-der-decoder.git
+git clone https://github.com/HasibNirjhar07/asn1-der-decoder.git
 cd asn1-der-decoder
 cargo build --release
 ```
