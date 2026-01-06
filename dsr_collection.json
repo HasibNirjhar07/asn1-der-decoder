@@ -1,0 +1,390 @@
+{
+  "info": {
+    "name": "DSR Ratings & Recharge APIs",
+    "_postman_id": "c5f0e3ac-4a9d-4a0e-9a21-111111111111",
+    "description": "Postman collection generated from DSR Ratings App PDF.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "DSR Ratings App",
+      "item": [
+        {
+          "name": "List DSR Rating Questions",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{global_base_recharge}}/api/app/v1/dsr-ratings/questions?retailerCode={{retailerCode}}&dsrEl={{dsrEl}}&type=RATING"
+          },
+          "response": []
+        },
+        {
+          "name": "List DSR Ratings",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{global-Local-url}}/api/app/v1/dsr-ratings?retailerCode={{retailerCode}}&dsrEl={{dsrEl}}&type=RATING"
+          },
+          "response": []
+        },
+        {
+          "name": "Submit DSR Rating",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": "{{baseUrl}}/api/app/v1/dsr-ratings"
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "e-SC App",
+      "item": [
+        {
+          "name": "List e-SC Offers",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/app/v1/e-sc/offers"
+          },
+          "response": []
+        },
+        {
+          "name": "Purchase e-SC Offer",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": "{{baseUrl}}/api/app/v1/e-sc/offer/{{offerId}}/purchase"
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Easy Recharge History",
+      "item": [
+        {
+          "name": "Download Recharge History (last N days)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "http://localhost:8080/api/app/v1/easy-recharge/history/recharge/last-n-days/download?days=30"
+          },
+          "response": []
+        },
+        {
+          "name": "Download Receive History (last N days)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "http://localhost:8080/api/app/v1/easy-recharge/history/receive/last-n-days/download?days=30"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Receive History (last N days from date)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "http://localhost:8080/api/app/v1/easy-recharge/history/receive/last-n-days?days=30&fromDate=2025-11-03"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Recharge History (last N days)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "http://localhost:8080/api/app/v1/easy-recharge/history/recharge/last-n-days?days=30"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Recharge History (date range)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "http://localhost:8080/api/app/v1/easy-recharge/history/recharge/last-n-days?days=30&fromDate=2025-11-03&toDate=2025-11-03"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Receive History (last N days)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "http://localhost:8080/api/app/v1/easy-recharge/history/receive/last-n-days?days=30"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Recharge History (today)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "http://localhost:8080/api/app/v1/easy-recharge/history/recharge/today"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Receive History (today)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "http://localhost:8080/api/app/v1/easy-recharge/history/receive/today"
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Flash Offer App",
+      "item": [
+        {
+          "name": "List Flash Offers",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{global_base_recharge}}/api/app/v1/flash-offers"
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Feature Maintenance App",
+      "item": [
+        {
+          "name": "Create Feature Flag",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": "{{baseUrl}}/api/app/v1/feature-maintenance/create"
+          },
+          "response": []
+        },
+        {
+          "name": "List Feature Flags",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/app/v1/feature-maintenance"
+          },
+          "response": []
+        },
+        {
+          "name": "Update Feature Flag",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "url": "{{baseUrl}}/api/app/v1/feature-maintenance/update"
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Force Update App",
+      "item": [
+        {
+          "name": "Check Force Update",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{global-Local-url}}/api/app/v1/force-update/lookup"
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "POPUP Ads App",
+      "item": [
+        {
+          "name": "List Popup Ads",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/app/v1/popup-ads"
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Promotional Banners App",
+      "item": [
+        {
+          "name": "List Promotional Banners",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{global_base_recharge}}/api/app/v1/promotional-banners"
+          },
+          "response": []
+        },
+        {
+          "name": "Mark Banner Seen",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/app/v1/promotional-banners/seen?id=1"
+          },
+          "response": []
+        },
+        {
+          "name": "Mark All Banners Seen",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": "{{baseUrl}}/api/app/v1/promotional-banners/seen/all"
+          },
+          "response": []
+        },
+        {
+          "name": "Track Banner Hit",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/app/v1/promotional-banners/hit?id=1"
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Recharge Amount Configs App",
+      "item": [
+        {
+          "name": "Get Config by Brand (AIRTEL)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{global_base_recharge}}/api/app/v1/recharge-amount-configs/AIRTEL"
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "User Info App",
+      "item": [
+        {
+          "name": "Get User Info (Global Recharge Ext)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{global_base_recharge_ext}}/api/app/v1/user-info"
+          },
+          "response": []
+        },
+        {
+          "name": "Get User Info (Dev URL)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "https://rdms-dev-api.robi.com.bd/recharge-service/api/app/v1/user-info"
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "VAS & App Config",
+      "item": [
+        {
+          "name": "List VAS (All)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{global_base_recharge}}/api/app/v1/vas-list/all"
+          },
+          "response": []
+        },
+        {
+          "name": "Get App Config",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{global-Local-url}}/api/app/v1/app-config"
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Retailer Assets & Images",
+      "item": [
+        {
+          "name": "Download Retailer Profile Photo",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{global-Local-url}}/auth/api/v1/retailer/download-retailer-profile-photo?resourceId={{resourceId}}"
+          },
+          "response": []
+        },
+        {
+          "name": "Get VAS List Image (Dev URL)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "https://rdms-dev-api.robi.com.bd/api-gw-ext/recharge-service/files/vas-list/image/VasList_e1e01cb7-e575-431c-971e-99bd3ab22817_1764160604.png"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Promotional Banner Image (Local URL)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{global-Local-url}}/files/promotional_banner/PromotionalBanner_fd92cbd9-a099-40d9-bd33-46a21eaaf553_1761634603.jpg"
+          },
+          "response": []
+        },
+        {
+          "name": "Upload Retailer Profile Photo (User Management)",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": "{{global_base_url}}/user-management/retailer/upload-retailer-profile-photo"
+          },
+          "response": []
+        },
+        {
+          "name": "Upload Retailer Profile Photo (Local Auth)",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": "{{global-Local-url}}/api/app/v1/retailer/auth/upload-retailer-profile-photo"
+          },
+          "response": []
+        },
+        {
+          "name": "Upload Retailer Profile Photo (Recharge Ext)",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": "{{global_base_recharge_ext}}/api/app/v1/auth/retailer/upload-retailer-profile-photo"
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Stock Request to DSR",
+      "item": [
+        {
+          "name": "Create Stock Request to DSR",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": "{{global-Local-url}}/api/app/v1/stock-request-to-dsr"
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}
